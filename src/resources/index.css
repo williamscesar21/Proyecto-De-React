@@ -1,0 +1,491 @@
+/* Estilos generales */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: arial;
+  color: #fff;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("https://imgur.com/a/3ILLTJW");
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  background-color: #012846;
+}
+
+::-webkit-input-placeholder {
+  color: #070707;
+}
+
+/* Estilos de formularios */
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  grid-column: 1;
+  margin-top: 150px;
+}
+
+.form2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  grid-column: 1;
+  margin-top: 100px;
+}
+.container21 {
+  display: flex;
+}
+
+.iconbin {
+  margin-left: auto;
+}
+
+.iconbin:hover path {
+  color: #f20505 !important;
+}
+
+.form3 {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  background-color: rgb(2, 27, 46);
+  border-radius: 20px;
+  padding: 20px;
+  height: fit-content;
+}
+.form4 {
+  flex: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(2, 27, 46);
+  border-radius: 20px;
+  padding: 15px;
+  margin: 10px 0; /* Ajusta el margen inferior y superior */
+}
+.input2 {
+  margin: 5px 0; /* Ajusta el margen de los input */
+  border: none;
+  outline: none;
+  background: none;
+  width: 260px;
+  padding-right: 10px;
+  font-size: 20px;
+  color: #05F2DB;
+  overflow: hidden;
+}
+
+.usuarios2 {
+  flex: 1;
+  height: 65vh;
+  width: 500px;
+  background-color: #021B2E;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  overflow-y: hidden;
+  margin-top: 100px;
+  margin-left: 40px;
+  position: relative;
+}
+.usuarios2:hover{
+  overflow-y: scroll;
+}
+.usuarios2::-webkit-scrollbar {
+  width: 0px; 
+}
+
+.exitoso {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  background-color: #0D0D0D;
+  color: #05F2DB;
+  border-radius: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.mal {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  background-color: #0D0D0D;
+  color: #f20505;
+  border-radius: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.title {
+  font-size: 35px;
+  color: #05F2DB;
+  font-weight: bolder;
+}
+.title2 {
+  font-size: 35px;
+  color: #05F2DB;
+  font-weight: bolder;
+  position: fixed;
+  z-index: 1;
+  background-color: #021B2E;
+  padding-top: 10px;
+}
+
+.inp {
+  padding-bottom: 10px;
+  border-bottom: 2px solid #05F2DB;
+}
+
+.input {
+  border: none;
+  outline: none;
+  background: none;
+  width: 260px;
+  margin-top: 20px;
+  padding-right: 10px;
+  font-size: 20px;
+  color: #05F2DB;
+  overflow: hidden;
+}
+
+
+.submit {
+  text-align: center;
+  border: none;
+  outline: none;
+  width: 200px;
+  margin-top: 25px;
+  margin-bottom: 5px;
+  padding: 10px 0;
+  font-size: 20px;
+  border-radius: 40px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  font-weight: 600;
+  color: #000000;
+  background: #05F2DB;
+}
+
+.footer {
+  margin-top: 30px;
+  letter-spacing: 0.5px;
+  font-size: 14px;
+}
+
+h4 {
+  color: #ffffff;
+  font-size: 18px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+#registroBot {
+  color: #000000;
+  background-color: #05F2DB;
+  font-size: 15px;
+  padding: 5px 20px 5px 20px;
+  border-radius: 20px;
+  font-weight: 700;
+}
+
+#registroBot2 {
+  color: #fff;
+  background-color: green;
+  font-size: 15px;
+  padding: 5px 20px 5px 20px;
+  border-radius: 20px;
+}
+
+.alerta {
+  color: red;
+  padding-top: 10px;
+  font-weight: bold;
+}
+
+/* Estilos del sidebar y la barra lateral */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 97%;
+  width: 200px;
+  background: rgb(0, 140, 255);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 2;
+  border-radius: 20px;
+  margin: 10px;
+}
+.sidebaropen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 97%;
+  width: 50px;
+  background: rgb(0, 140, 255);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 2;
+  border-radius: 20px;
+  margin: 10px;
+}
+.sidebaropen .nav-link{
+  width: auto;
+}
+
+
+.sidebar2 {
+  bottom: 0;
+  right: 0;
+  width: 220px;
+  height: 400px;
+  background-color: rgb(38, 148, 231);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 2;
+  border-radius: 20px;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  overflow-y: hidden;
+}
+.sidebar2:hover{
+  overflow-y: scroll;
+}
+.sidebar2::-webkit-scrollbar {
+  width: 0px; 
+}
+
+/* Estilos del logo y la navegación */
+.logo img {
+  width: 100px;
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #fff;
+  padding: 10px 7px;
+  margin: 5px 0px;
+  transition: background-color 0.3s ease;
+  border-radius: 10px;
+  width: 150px;
+  font-size: 20px;
+  display: inline-flex;
+}
+
+.usuarioss {
+  padding: 10px 20px;
+  margin: 5px 0px;
+  background-color: #50e7d59c;
+  border-radius: 10px;
+  width: 100%;
+  font-size: 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+  color: #ffffff;
+  text-align: center;
+}
+.usuarioss:hover{
+  background-color: rgba(17, 59, 54, 0.612);
+  cursor: pointer;
+}
+.delete-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  margin: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.list {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  color: #ffffff;
+  font-size:20px ;
+}
+
+.nav-link:hover {
+  background-color: #50e7d59c;
+}
+
+.active {
+  background-color: #0af0d59c;
+  color: #fff;
+}
+
+/* Estilos de la sección de contenido principal */
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr; /* Dos columnas: 1 para el welcomeBanner y Usuarios, 2 para banners y charts */
+  grid-template-rows: auto auto; /* Dos filas: una para los banners, otra para charts */
+  gap: 5px;
+  margin: 20px;
+}
+
+.welcomeBanner
+{
+  grid-column: 1 / span 2; /* Ocupa dos columnas */
+  background: rgb(0, 140, 255);
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.banner {
+  width: 100%;
+  height: 200px;
+  background-color: #0d40da;
+  border-radius: 20px;
+}
+.perfil {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 1000px;
+  height: 95vh;
+  background-color: #008CFF;
+  border-radius: 20px;
+  margin-top: 10px;
+  padding: 20px 60px;
+  margin-left: 220px;
+}
+
+.banner h1 {
+  font-size: 25px;
+  font-weight: bold;
+  width: 350px;
+  margin-left: 15px;
+  padding-top: 15px;
+  line-height: 25px;
+}
+
+.banner p {
+  font-weight: 500;
+  width: 400px;
+  margin-left: 15px;
+  padding-top: 10px;
+}
+
+.banner button {
+  margin-left: 15px;
+  margin-top: 15px;
+  background-color: #fff;
+  color: #000000;
+  border-radius: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.banner button:hover {
+  margin-left: 15px;
+  margin-top: 15px;
+  background-color: #000000;
+  color: #02ffe1;
+  border-radius: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.banners {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Dos columnas para los banners */
+  gap: 20px;
+}
+
+.chart {
+  background-color: #ffffff;
+  width: 300px;
+  height: 150px;
+  border-radius: 30px;
+  margin: 15px;
+  padding: 10px;
+}
+
+.pie {
+  background-color: #ffffff;
+  width: 150px;
+  height: 150px;
+  border-radius: 30px;
+  margin: 15px;
+  padding: 10px;
+}
+
+.charts {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Tres columnas para los charts */
+  gap: 20px;
+}
+
+h1{
+  font-size: 30px;
+}
+
+
+.chat-container {
+  width: 800px;
+  margin: 20px auto;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.chat-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-container {
+  display: flex;
+  gap: 10px;
+}
+
+.inputAI {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  color: #000000;
+  width: 700px;
+}
+
+.response-container {
+  margin-top: 10px;
+  height: 400px;
+}
